@@ -93,7 +93,7 @@ export default definePlugin({
       children.push(
         <Menu.MenuItem
           id="fake-mute-controls"
-          label="develoepd by quarz"
+          label="developed by quarz"
           children={[
             <Menu.MenuCheckboxItem
               id="fake-mute"
