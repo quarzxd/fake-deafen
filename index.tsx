@@ -23,7 +23,7 @@ async function update() {
     if (!state.disabledSounds.includes("deafen")) toDisable.push("deafen");
     if (!state.disabledSounds.includes("undeafen")) toDisable.push("undeafen");
     state.disabledSounds.push(...toDisable);
-
+    
     const { selfMute, selfDeaf } = fakeVoiceState;
 
     async function toggleIfNeeded(current: boolean, toggleFn: () => Promise<void>) {
@@ -69,7 +69,7 @@ const StateKeys = ["selfMute", "selfDeaf", "serverMute", "serverDeaf"];
 
 export default definePlugin({
   name: "FakeMuteDeaf",
-  description: "Fake Deafen",
+  description: "Quarz Made that shit",
   authors: [Devs.TheArmagan],
 
   modifyVoiceState(e) {
@@ -93,7 +93,7 @@ export default definePlugin({
       children.push(
         <Menu.MenuItem
           id="fake-mute-controls"
-          label="Fake Mute & Deaf"
+          label="develoepd by quarz"
           children={[
             <Menu.MenuCheckboxItem
               id="fake-mute"
